@@ -131,3 +131,32 @@ body {
   height: auto;
   border-radius: 35px;
 }
+
+/* ************************************ */
+/* ***** Змінити колір пагінації на базовому прикладі 1*/
+
+.slider__example-1 .swiper-pagination-bullet {
+  background-color: #00ffff;
+}
+
+.slider__example-2 {
+  --swiper-theme-color: #ff0000;
+  /* Navigation CSS Custom Properties */
+  --swiper-navigation-size: 80px;
+  --swiper-navigation-top-offset: 80%;
+  --swiper-navigation-sides-offset: 60px;
+  --swiper-navigation-color: var(--swiper-theme-color);
+
+  /* Pagination CSS Custom Properties */
+  --swiper-pagination-color: var(--swiper-theme-color);
+  --swiper-pagination-left: auto;
+  --swiper-pagination-right: 8px;
+  --swiper-pagination-bottom: auto;
+  --swiper-pagination-top: 10px;
+  --swiper-pagination-bullet-width: 16px;
+  --swiper-pagination-bullet-height: 16px;
+  --swiper-pagination-bullet-inactive-color: var(--swiper-theme-color);
+  --swiper-pagination-bullet-inactive-opacity: 0.5;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 10px;
+}
