@@ -40,3 +40,24 @@ const swiperExample1 = new Swiper('.slider__example-1', {
     el: '.swiper-scrollbar',
   },
 });
+
+const swiperExample2 = new Swiper('.slider__example-2', {
+  slidesPerView: 3,
+  spaceBetween: 10,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});

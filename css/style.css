@@ -124,3 +124,10 @@ body {
   height: auto;
   border-radius: 25px;
 }
+
+.slider__example-img2 {
+  width: 100%;
+  max-width: 860px;
+  height: auto;
+  border-radius: 35px;
+}
