@@ -20,3 +20,23 @@ const swiperBase = new Swiper('.slider-base', {
     el: '.swiper-scrollbar',
   },
 });
+
+const swiperExample1 = new Swiper('.slider__example-1', {
+  // slidesPerView: 3,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
