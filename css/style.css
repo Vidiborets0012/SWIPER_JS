@@ -1,0 +1,112 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+:root {
+  --container-main: 1920px;
+  --container-medium: 1200px;
+  --container-small: 1000px;
+  --container-padding-x: 15px;
+
+  --color-dark: #000000;
+  --color-light: #ffffff;
+  --color-dark-gray: #404040;
+  --color-light-gray: #c4c4c4;
+  --color-dark-alternate: #131619;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.75;
+  font-style: normal;
+  color: var(--color-light);
+  background-color: var(--color-dark);
+}
+
+.section__container {
+  max-width: calc(var(--container-main) + var(--container-padding-x) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+}
+
+.slider__container {
+  max-width: calc(var(--container-medium) + var(--container-padding-x) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+  background-color: var(--color-dark-gray);
+}
+
+.page__slider {
+  padding-block: 10px;
+}
+
+.section {
+  margin-bottom: 40px;
+  background-color: var(--color-dark-alternate);
+}
+
+.section__header-title {
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section__header-text:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.slider-base {
+  max-width: 1000px;
+  background-color: #6495ed;
+}
+
+.card {
+  block-size: 300px;
+  padding-block: 30px;
+  padding-inline: 30px;
+
+  font-size: 16px;
+  color: var(--color-dark);
+  background-color: var(--color-light-gray);
+  border: 1px solid var(--color-dark);
+}

@@ -4,10 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SWIPER</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <main class="page">
+      <section class="page__slider slider section">
+        <div class="section__container">
+          <div class="section__header">
+            <h1 class="visually-hidden">Swiper</h1>
+            <h2 class="section__header-title">Базовий слайдер</h2>
+            <p class="section__header-text"></p>
+          </div>
+          <div class="slider__container">
+            <!-- Slider main container -->
+            <div class="swiper slider-base">
+              <!-- <div class="swiper-container"></div> -->
+
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="card">Слайд-1</div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">Слайд-2</div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">Слайд-3</div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">Слайд-4</div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">Слайд-5</div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">Слайд-6</div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">Слайд-7</div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">Слайд-8</div>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
