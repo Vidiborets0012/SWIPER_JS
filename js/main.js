@@ -61,3 +61,17 @@ const swiperExample2 = new Swiper('.slider__example-2', {
     el: '.swiper-scrollbar',
   },
 });
+
+const swiperExample3 = new Swiper('.slider__example-3', {
+  slidesPerView: 3,
+  spaceBetween: 10,
+
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next3',
+    prevEl: '.swiper-button-prev3',
+  },
+});
