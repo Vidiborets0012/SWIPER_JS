@@ -238,6 +238,7 @@ body {
 
 .slider-base--out {
   max-width: 1000px;
+  padding-bottom: 50px;
 }
 
 .swiper-button-prev__out::after,

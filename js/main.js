@@ -109,4 +109,8 @@ const swiperBaseOut = new Swiper('.slider-base--out', {
     nextEl: '.swiper-button-next__out',
     prevEl: '.swiper-button-prev__out',
   },
+
+  pagination: {
+    el: '.swiper-pagination',
+  },
 });
