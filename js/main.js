@@ -114,3 +114,42 @@ const swiperBaseOut = new Swiper('.slider-base--out', {
     el: '.swiper-pagination',
   },
 });
+
+const swiperBaseTypeProgressbar = new Swiper('.slider-base__type--progressbar', {
+  // Optional parameters
+  // direction: 'vertical',
+  // loop: true,
+  slidesPerView: 3,
+  spaceBetween: 10,
+
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'progressbar',
+  },
+});
+
+const swiperBaseTypeFraction = new Swiper('.slider-base__type--fraction', {
+  // Optional parameters
+  // direction: 'vertical',
+  // loop: true,
+  slidesPerView: 3,
+  spaceBetween: 10,
+
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+  },
+});
+
+const swiperBaseTypeCustom = new Swiper('.slider-base__type--custom', {
+  // Optional parameters
+  // direction: 'vertical',
+  // loop: true,
+  slidesPerView: 3,
+  spaceBetween: 10,
+
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'custom',
+  },
+});
