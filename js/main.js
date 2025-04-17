@@ -82,6 +82,7 @@ const swiperBaseGroup = new Swiper('.slider-base--group', {
   // direction: 'vertical',
   // loop: true,
   slidesPerView: 3,
+  spaceBetween: 10,
   slidesPerGroup: 3,
 
   // If we need pagination
@@ -93,5 +94,19 @@ const swiperBaseGroup = new Swiper('.slider-base--group', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+});
+
+const swiperBaseOut = new Swiper('.slider-base--out', {
+  // Optional parameters
+  // direction: 'vertical',
+  // loop: true,
+  slidesPerView: 3,
+  spaceBetween: 10,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next__out',
+    prevEl: '.swiper-button-prev__out',
   },
 });

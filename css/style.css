@@ -227,3 +227,40 @@ body {
 .swiper-button:hover {
   background-color: var(--color-dark-gray);
 }
+
+/* ************************************ */
+/* ***** Винести кнопки за межі слайдеру*/
+
+.slider__container {
+  position: relative;
+  --swiper-theme-color: #48ff00;
+}
+
+.slider-base--out {
+  max-width: 1000px;
+}
+
+.swiper-button-prev__out::after,
+.swiper-button-next__out::after {
+  display: none;
+}
+
+/* .swiper-button-next svg,
+.swiper-button-prev svg {
+  width: 32px;
+  height: 32px;
+}
+
+.swiper-button {
+  margin-top: 0;
+  width: 90px;
+  height: 90px;
+  transform: translateY(-50%);
+  background-color: var(--color-light);
+  border: 1px solid var(--swiper-theme-color);
+  border-radius: 100%;
+}
+
+.swiper-button:hover {
+  background-color: var(--color-dark-gray);
+} */
