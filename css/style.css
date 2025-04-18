@@ -272,3 +272,13 @@ body {
 .slider__container--breakpoints {
   --swiper-theme-color: #2600ff;
 }
+
+.slider__container.slider__container--breakpoints {
+  padding-inline: 110px;
+}
+
+@media (max-width: 768px) {
+  .slider__container--breakpoints .section__slider-buttons {
+    display: none;
+  }
+}

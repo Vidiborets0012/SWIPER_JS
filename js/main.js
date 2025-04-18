@@ -155,7 +155,7 @@ const swiperBaseTypeCustom = new Swiper('.slider-base__type--custom', {
 });
 
 const swiperBaseBreakpoints = new Swiper('.swiper__base-breakpoints', {
-  slidesPerView: 3,
+  slidesPerView: 1,
 
   pagination: {
     el: '.swiper-pagination',
@@ -165,11 +165,26 @@ const swiperBaseBreakpoints = new Swiper('.swiper__base-breakpoints', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    // 640: {
+    //   slidesPerView: 2,
+    //   spaceBetween: 20,
+    // },
+    768: {
+      slidesPerView: 2,
+      // spaceBetween: 40,
+    },
+    999: {
+      slidesPerView: 3,
+      // spaceBetween: 50,
+    },
   },
 });
 
 const swiperOutBreakpoints = new Swiper('.swiper__out-breakpoints', {
-  slidesPerView: 3,
+  slidesPerView: 1,
 
   pagination: {
     el: '.swiper-pagination',
@@ -179,5 +194,20 @@ const swiperOutBreakpoints = new Swiper('.swiper__out-breakpoints', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    // 360: {
+    //   slidesPerView: 2,
+    //   spaceBetween: 20,
+    // },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
   },
 });
