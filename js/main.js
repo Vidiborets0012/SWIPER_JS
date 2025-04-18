@@ -153,3 +153,31 @@ const swiperBaseTypeCustom = new Swiper('.slider-base__type--custom', {
     type: 'custom',
   },
 });
+
+const swiperBaseBreakpoints = new Swiper('.swiper__base-breakpoints', {
+  slidesPerView: 3,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+const swiperOutBreakpoints = new Swiper('.swiper__out-breakpoints', {
+  slidesPerView: 3,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

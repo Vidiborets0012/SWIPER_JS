@@ -267,4 +267,8 @@ body {
 } */
 
 /* ************************************ */
-/* ***** */
+/* ***** АДАПТИВ*/
+
+.slider__container--breakpoints {
+  --swiper-theme-color: #2600ff;
+}
