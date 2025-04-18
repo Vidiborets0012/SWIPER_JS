@@ -192,8 +192,8 @@ const swiperOutBreakpoints = new Swiper('.swiper__out-breakpoints', {
   },
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next__out',
+    prevEl: '.swiper-button-prev__out',
   },
 
   breakpoints: {
@@ -208,6 +208,27 @@ const swiperOutBreakpoints = new Swiper('.swiper__out-breakpoints', {
     1000: {
       slidesPerView: 3,
       spaceBetween: 10,
+    },
+  },
+});
+
+const swiperBaseAuto = new Swiper('.swiper__base-auto', {
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    999: {
+      slidesPerView: 3,
     },
   },
 });

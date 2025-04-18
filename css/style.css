@@ -282,3 +282,9 @@ body {
     display: none;
   }
 }
+
+/* ************* Різна ширина слайдів */
+
+.swiper.swiper__base-auto .swiper-slide {
+  width: auto;
+}
